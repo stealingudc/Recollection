@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'minecraftFont';
+    src: url(resources/fonts/minecraftregular-bmg3-webfont.woff);
+}
+
+.parallax{
+    background-image: url("resources/main-menu/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.body-div{
+    width: 80%;
+    display: block;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+}
+
+.header{
+    border-radius: 1vw;
+    background-color: #131313e7;
+    margin: 5%;
+    width: 80%;
+    height: 135px;
+    min-height: 135px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-image{
+    display: flex;
+    min-width: 700px;
+    min-height: 60%*133px;
+    width: 60%;
+    height: 110%;
+    margin: auto;
+    transform: scale(0.5);
+}
+
+.navbar{
+    list-style-type: none;
+    margin: 5%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131313e7;
+    width: 80%;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    border-radius: 1vw;
+    margin-top: 0.2vw;
+    font-family: minecraftFont;
+}
+
+.navbar-element-container{
+    float: left;
+}
+
+.navbar-element{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    margin: auto;
+}
+
+.navbar-element:hover{
+    background-color: #000000fa;
+}
+
+.content{
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 0.5vw;
+    background-color: #131313e7;
+    margin: 1%;
+    width: 80%;
+    height: auto;
+    min-height: fit-content;
+    display: block;
+    align-self: center;
+    justify-content: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 3%;
+}
+
+.heading-text{
+    color: #FFFFFF;
+    font-family: minecraftFont;
+    font-style: normal;
+    text-align: left;
+    padding-top: 1%;
+    font-size: x-large;
+    padding-bottom: 0;
+    padding-left: 3%;
+    text-indent: 25px;
+}
+
+.paragraph-text{
+    color: #FFFFFF;
+    font-family: minecraftFont;
+    font-style: normal;
+    text-align: left;
+    padding-left: 3%;
+    padding-right: 3%;
+    line-height: 23px;
+    text-indent: 25px;
+}
+
+.paragraph-img{
+    width: 80%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
