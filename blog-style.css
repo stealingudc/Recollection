@@ -22,7 +22,7 @@ html{
     justify-self: center;
     align-self: center;
     margin: auto;
-    height: 100%;
+    min-height: 343vh;
     float: inline-start;
 }
 
@@ -64,6 +64,7 @@ html{
     border-radius: 1vw;
     margin-top: 0.2vw;
     font-family: minecraftFont;
+    position:sticky;
 }
 
 .navbar-element-container{
@@ -115,7 +116,6 @@ html{
     height: auto;
     min-height: fit-content;
     display: block;
-    align-self: auto;
     justify-content: left;
     padding: 0;
     overflow: hidden;
@@ -133,7 +133,7 @@ html{
     padding: 0;
     background-color: #131313e7;
     font-family: minecraftFont;
-    position: sticky;
+    position: relative;
 }
 
 .sidebar ul li a{
@@ -141,7 +141,7 @@ html{
     color: #FFFFFF;
     padding: 8px 16px;
     text-decoration: none;
-    position: sticky;
+    position: relative;
 }
 
 .sidebar ul li a:hover{
@@ -177,4 +177,53 @@ html{
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
+}
+
+.slider-container{
+    width: 80%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+}
+
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover{
+    opacity: 1;
 }
